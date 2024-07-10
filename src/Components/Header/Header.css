@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.project-name {
+  margin-left: 2%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-icons {
+  margin-right: 2%;
+  display: flex;
+  gap: 20px;
+}
+
+.header-icons img {
+  border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Video Wrapper Styles */
+.vid-wrapper {
+  position: relative; /* Allows absolute positioning for elements inside */
+  width: 100%;
+  height: 100vh; /* Cover full viewport height for better responsiveness */
+  overflow: hidden; /* Hide video overflow if it exceeds container size */
+}
+
+.vid-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  opacity: 1;
+}
+
+header {
+  /* Your header styles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensure header is above the video */
+  /* ... other header styles (padding, background, etc.) */
+}
+
+.prediction {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+
+footer {
+  position: absolute; /* Position the footer absolutely */
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 10px;
+}
